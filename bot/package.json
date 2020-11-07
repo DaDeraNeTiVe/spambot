@@ -4,6 +4,8 @@
   "description": "",
   "main": "bots/admin.js",
   "scripts": {
+    "horoscope_bot": "node bots/horoscope.js",
+    "horoscope_bot_debug": "node --inspect=0.0.0.0 bots/horoscope.js",
     "admin_bot": "node bots/admin.js",
     "admin_bot_debug": "node --inspect=0.0.0.0 bots/admin.js"
   },

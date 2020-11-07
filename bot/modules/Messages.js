@@ -1,5 +1,4 @@
 const messages = require('../messages');
-const flatten = require('lodash.flatten');
 
 function getTemplate(code) {
     return messages[code] || '';
@@ -49,9 +48,8 @@ function escapeMarkdown(text) {
 
 function getMessage(code, data = {}) {
     let message = getTemplate(code);
-    let flattenData = flatten(data);
 
-    for (const key in flattenData) {
+    for (const key in data) {
         const value = data[key];
 
         let replaceRegexp = new RegExp(`%${key}%`, 'g');

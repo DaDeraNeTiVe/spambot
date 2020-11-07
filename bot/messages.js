@@ -47,4 +47,8 @@ module.exports = {
     'botDeleted': 'Нажми F, чтобы помянуть %name%',
 
     'statMenu': 'Вот, смотри статистику',
+
+
+    'horoscope_startMessage': 'Привет! Нажми на кнопку, получишь гороскоп, и твоя мечта осуществится!',
+    'horoscope': '*%sign%, %date%, %type%*\n\n%text%',
 }

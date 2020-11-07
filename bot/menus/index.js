@@ -4,6 +4,7 @@ const message = require('./message');
 const mailing = require('./mailing');
 const bot = require('./bot');
 const stats = require('./stats');
+const horoscope = require('./horoscope');
 
 let menus = {
     root,
@@ -11,6 +12,7 @@ let menus = {
     mailing,
     bot,
     stats,
+    horoscope,
     yesNo(b, {yesAction, noAction}, m) {
         return [
             [ b( 'Да', yesAction) ],
