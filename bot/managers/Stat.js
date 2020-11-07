@@ -1,5 +1,5 @@
 const {getDb} = require('../modules/Database');
-const ChartjsNode = require('chartjs-node');
+//const ChartjsNode = require('chartjs-node');
 const moment = require('moment');
 
 let statInstance = null;
@@ -86,10 +86,11 @@ function StatManager() {
                 options: {},
             };
 
-            let chat = new ChartjsNode(600, 600);
-            await chat.drawChart(chatParams);
-
-            return chat.getImageBuffer('image/png');
+            // let chat = new ChartjsNode(600, 600);
+            // await chat.drawChart(chatParams);
+            //
+            // return chat.getImageBuffer('image/png');
+            return null;
         }
     }
 }
